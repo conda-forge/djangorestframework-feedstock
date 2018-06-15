@@ -14,12 +14,17 @@ Summary: Web APIs for Django, made easy
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/djangorestframework-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/djangorestframework-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/djangorestframework-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/djangorestframework-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/djangorestframework-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/djangorestframework-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/djangorestframework-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/djangorestframework-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/djangorestframework/badges/version.svg)](https://anaconda.org/conda-forge/djangorestframework)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/djangorestframework/badges/downloads.svg)](https://anaconda.org/conda-forge/djangorestframework)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-django--rest--framework-green.svg)](https://anaconda.org/conda-forge/django-rest-framework) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/django-rest-framework.svg)](https://anaconda.org/conda-forge/django-rest-framework) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/django-rest-framework.svg)](https://anaconda.org/conda-forge/django-rest-framework) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/django-rest-framework.svg)](https://anaconda.org/conda-forge/django-rest-framework) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-djangorestframework-green.svg)](https://anaconda.org/conda-forge/djangorestframework) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/djangorestframework.svg)](https://anaconda.org/conda-forge/djangorestframework) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/djangorestframework.svg)](https://anaconda.org/conda-forge/djangorestframework) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/djangorestframework.svg)](https://anaconda.org/conda-forge/djangorestframework) |
 
 Installing djangorestframework
 ==============================
@@ -30,16 +35,16 @@ Installing `djangorestframework` from the `conda-forge` channel can be achieved 
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `djangorestframework` can be installed with:
+Once the `conda-forge` channel has been enabled, `django-rest-framework, djangorestframework` can be installed with:
 
 ```
-conda install djangorestframework
+conda install django-rest-framework djangorestframework
 ```
 
-It is possible to list all of the versions of `djangorestframework` available on your platform with:
+It is possible to list all of the versions of `django-rest-framework` available on your platform with:
 
 ```
-conda search djangorestframework --channel conda-forge
+conda search django-rest-framework --channel conda-forge
 ```
 
 
