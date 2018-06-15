@@ -11,7 +11,6 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
@@ -28,6 +27,19 @@ test:
     - rest_framework.templatetags
     - rest_framework.utils
 
+outputs:
+  - name: djangorestframework
+    build:
+      script: python -m pip install --no-deps --ignore-installed .
+    requirements:
+      - python
+      - django
+
+  - name: django-rest-framework
+    requirements:
+      - python
+      - {{ pin_subpackage('djangorestframework', exact=True) }}
+
 about:
   home: http://www.django-rest-framework.org
   license: BSD 2-Clause
@@ -37,3 +49,4 @@ extra:
   recipe-maintainers:
     - ocefpaf
     - kwilcox
+    - scopatz
