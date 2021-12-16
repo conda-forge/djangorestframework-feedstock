@@ -1,12 +1,14 @@
-{% set version = "3.13.0" %}
+{% set name = "djangorestframework" %}
+{% set version = "3.13.1" %}
+
 
 package:
-  name: djangorestframework
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/djangorestframework/djangorestframework-{{ version }}.tar.gz
-  sha256: 8b987d5683f5b3553dd946d4972048d3117fc526cb0bc01a3f021e81af53f39e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/djangorestframework-{{ version }}.tar.gz
+  sha256: 0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee
 
 build:
   number: 0
@@ -15,11 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - django >=2.2
+    - pytz
 
 test:
   imports:
@@ -34,10 +37,11 @@ test:
     - pip
 
 about:
-  home: http://www.django-rest-framework.org
+  home: https://www.django-rest-framework.org/
+  summary: Web APIs for Django, made easy.
+  dev_url: https://github.com/encode/django-rest-framework
   license: BSD-3-Clause
   license_file: LICENSE.md
-  summary: Web APIs for Django, made easy
 
 extra:
   recipe-maintainers:
