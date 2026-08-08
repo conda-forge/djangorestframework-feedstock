@@ -1,5 +1,5 @@
 {% set name = "djangorestframework" %}
-{% set version = "3.17.2" %}
+{% set version = "3.18.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/djangorestframework-{{ version }}.tar.gz
-  sha256: 89ed713b6dc83e1539f214b7d10808ae19bb8511004beba886225da6d5c9dafa
+  sha256: 2323a5111837e0b784dcb8323abc78ecc54fa2a5af7aff2677cf50cdd849477f
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - django >=4.2
+    - django >=5.2
 
 test:
   imports:
