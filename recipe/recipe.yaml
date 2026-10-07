@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.18.2"
+  version: "3.18.3"
 
 package:
   name: djangorestframework
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/djangorestframework/djangorestframework-${{ version }}.tar.gz
-  sha256: 8249bad7715eb37274ce5820fc5d9fd786b7579806589565f52a71c02b35f54b
+  sha256: 446a9b352e7eff630421ab3f2328bd2401b109a9470afa4a31189994911ed030
 
 build:
   number: 0
